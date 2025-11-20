@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CrossFit Leiden nutrition coaching - Choose 1-on-1 coaching or join our 28-day Kickstart group. Eat better, feel stronger, without a crazy diet.">
+    <meta name="description" content="Nutrition coaching at CrossFit Leiden. Personal support to help you eat better and feel stronger with a plan that fits your life.">
     <title>Nutrition Coaching | CrossFit Leiden</title>
 
     <!-- Tailwind CSS CDN -->
@@ -15,11 +15,9 @@
             theme: {
                 extend: {
                     colors: {
-                        // EDITABLE: Brand accent colors - change these to match your brand
-                        'brand-red': '#F87171',
-                        'brand-yellow': '#FBBF24',
                         'brand-teal': '#14B8A6',
-                        'brand-purple': '#A78BFA',
+                        'brand-warm': '#F97316',
+                        'brand-soft': '#F3F4F6',
                     }
                 }
             }
@@ -27,35 +25,31 @@
     </script>
 
     <style>
-        /* Smooth scroll behavior */
         html {
             scroll-behavior: smooth;
         }
 
-        /* Custom focus styles for accessibility */
-        button:focus, a:focus {
-            outline: 2px solid #14B8A6;
-            outline-offset: 2px;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased">
+<body class="bg-white text-gray-900 antialiased">
 
     <!-- ============================================ -->
     <!-- STICKY HEADER -->
     <!-- ============================================ -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="text-xl sm:text-2xl font-bold text-gray-900">
+                <div class="text-xl sm:text-2xl font-semibold text-gray-900">
                     CrossFit Leiden
                 </div>
 
-                <!-- Contact Button -->
-                <a href="#contact"
-                   class="px-4 py-2 text-sm sm:text-base bg-brand-teal text-white rounded-lg hover:bg-teal-600 transition-colors font-medium">
-                    Contact
+                <!-- BOOKING LINK GOES HERE -->
+                <a href="#booking"
+                   class="px-4 py-2 sm:px-5 sm:py-2.5 bg-brand-teal text-white rounded-lg hover:bg-teal-600 transition-colors text-sm sm:text-base font-medium shadow-sm">
+                    Book Goal Review
                 </a>
             </div>
         </div>
@@ -65,98 +59,104 @@
         <!-- ============================================ -->
         <!-- HERO SECTION -->
         <!-- ============================================ -->
-        <section class="bg-white py-12 sm:py-20 lg:py-24">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <!-- Main Headline -->
-                <!-- EDITABLE: Change this headline to match your key benefit -->
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                    Eat better. Feel stronger.<br>
-                    <span class="text-brand-teal">Without a crazy diet.</span>
-                </h1>
+        <section class="bg-gradient-to-b from-gray-50 to-white py-12 sm:py-20 lg:py-28">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Hero Content -->
+                    <div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                            Eat better. Feel stronger.
+                            <span class="text-brand-teal">With a plan that fits your life.</span>
+                        </h1>
 
-                <!-- Supporting Text -->
-                <!-- EDITABLE: Update this supporting message -->
-                <p class="text-lg sm:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-                    Choose a 1-on-1 nutrition coach or join our 28-day Kickstart group.
-                    Both are built for real life.
-                </p>
+                        <p class="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
+                            Choose between 1-on-1 coaching or our 28-Day Kickstart.<br>
+                            We help you build simple, healthy habits that stick.
+                        </p>
 
-                <!-- Primary CTAs -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                    <a href="#one-on-one"
-                       class="px-8 py-4 bg-brand-red text-white rounded-lg hover:bg-red-500 transition-colors text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                        Start 1-on-1 Coaching
-                    </a>
-                    <a href="#kickstart"
-                       class="px-8 py-4 bg-brand-yellow text-gray-900 rounded-lg hover:bg-yellow-400 transition-colors text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                        Join the 28-Day Kickstart
-                    </a>
+                        <!-- BOOKING LINK GOES HERE -->
+                        <a href="#booking"
+                           class="inline-block w-full sm:w-auto px-10 py-4 bg-brand-warm text-white rounded-lg hover:bg-orange-600 transition-all text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                            Book Goal Review
+                        </a>
+
+                        <p class="text-sm text-gray-500 mt-6">
+                            Warm, personal support in the heart of Leiden.
+                        </p>
+                    </div>
+
+                    <!-- Hero Image Placeholder -->
+                    <div class="order-first lg:order-last">
+                        <!-- INSERT HERO IMAGE HERE -->
+                        <div class="aspect-square lg:aspect-auto lg:h-[500px] bg-gradient-to-br from-teal-100 to-orange-100 rounded-2xl flex items-center justify-center text-gray-400">
+                            <span class="text-center px-4">Hero Image<br>Insert warm, welcoming photo here</span>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Trust Line -->
-                <p class="text-sm text-gray-500">
-                    Based in Leiden. Real people, real results.
-                </p>
             </div>
         </section>
 
         <!-- ============================================ -->
-        <!-- HOW IT WORKS SECTION -->
+        <!-- HOW IT WORKS -->
         <!-- ============================================ -->
-        <section class="py-16 sm:py-20 bg-gray-50">
+        <section class="py-16 sm:py-24 bg-white">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                         How it works
                     </h2>
-                    <p class="text-lg text-gray-600">
-                        Simple steps to feel better in your body
-                    </p>
                 </div>
 
-                <!-- Steps Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
                     <!-- Step 1 -->
                     <div class="text-center">
-                        <div class="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 bg-brand-teal rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
                             1
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Book your call</h3>
-                        <p class="text-gray-600">
-                            Start with a friendly chat about your goals and lifestyle.
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                            Book your Goal Review
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Sit down with Coach Annie. Talk about your goals, your lifestyle, and where you want to go.
                         </p>
                     </div>
 
                     <!-- Step 2 -->
                     <div class="text-center">
-                        <div class="w-16 h-16 bg-brand-yellow text-gray-900 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 bg-brand-warm rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
                             2
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Set your plan</h3>
-                        <p class="text-gray-600">
-                            Get a clear plan that fits your real life and preferences.
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                            Set your personal plan
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            A simple, realistic plan that fits your real life. No stress. No extremes.
                         </p>
                     </div>
 
                     <!-- Step 3 -->
                     <div class="text-center">
-                        <div class="w-16 h-16 bg-brand-purple text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 bg-teal-400 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
                             3
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Get weekly guidance</h3>
-                        <p class="text-gray-600">
-                            Stay on track with regular check-ins and support.
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                            Weekly guidance
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Stay on track with small steps, clear habits, and friendly accountability.
                         </p>
                     </div>
 
                     <!-- Step 4 -->
                     <div class="text-center">
-                        <div class="w-16 h-16 bg-brand-red text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 bg-orange-400 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
                             4
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">See the results</h3>
-                        <p class="text-gray-600">
-                            Feel stronger, sleep better, and enjoy your food.
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                            See and feel the results
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            More energy. Better focus. Stronger in your body and mind.
                         </p>
                     </div>
                 </div>
@@ -164,84 +164,142 @@
         </section>
 
         <!-- ============================================ -->
-        <!-- PROGRAM 1: ONE-ON-ONE COACHING -->
+        <!-- ABOUT COACH ANNIE -->
         <!-- ============================================ -->
-        <section id="one-on-one" class="py-16 sm:py-20 bg-white scroll-mt-20">
+        <section class="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                    <!-- Coach Image -->
+                    <div class="lg:col-span-2">
+                        <!-- INSERT COACH ANNIE IMAGE HERE -->
+                        <div class="aspect-square bg-gradient-to-br from-teal-100 to-orange-100 rounded-2xl flex items-center justify-center text-gray-400">
+                            <span class="text-center px-4">Coach Annie<br>Insert photo here</span>
+                        </div>
+                    </div>
+
+                    <!-- Coach Content -->
+                    <div class="lg:col-span-3">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                            Meet Coach Annie
+                        </h2>
+
+                        <div class="prose prose-lg text-gray-600 space-y-4 mb-8">
+                            <p>
+                                Annie is our nutrition coach at CrossFit Leiden.
+                            </p>
+                            <p>
+                                Warm, calm, and clear in her guidance.<br>
+                                She helps you build habits that fit your busy life.
+                            </p>
+                            <p>
+                                No strict rules. No overwhelm.<br>
+                                Just simple, steady steps that help you feel your best.
+                            </p>
+                            <p>
+                                You will meet Annie during your Goal Review, where you will look at your goals and choose the program that fits you best.
+                            </p>
+                        </div>
+
+                        <!-- BOOKING LINK GOES HERE -->
+                        <a href="#booking"
+                           class="inline-block w-full sm:w-auto px-8 py-3.5 bg-brand-teal text-white rounded-lg hover:bg-teal-600 transition-colors font-semibold shadow-md hover:shadow-lg">
+                            Book Goal Review
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 1-ON-1 COACHING -->
+        <!-- ============================================ -->
+        <section id="one-on-one" class="py-16 sm:py-24 bg-white scroll-mt-20">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 sm:p-12 shadow-xl border border-red-100">
-                    <!-- Title -->
+                <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-3xl p-8 sm:p-12 border border-orange-100 shadow-xl">
+
                     <div class="text-center mb-8">
                         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
                             1-on-1 Nutrition Coaching
                         </h2>
-                        <!-- EDITABLE: Update pricing here -->
-                        <p class="text-xl sm:text-2xl text-brand-red font-semibold">
-                            €350 / month · minimum 2 months
+                        <p class="text-2xl text-brand-warm font-semibold">
+                            €350 per month · Minimum 2 months
                         </p>
                     </div>
 
-                    <!-- Description -->
-                    <!-- EDITABLE: Customize the program description -->
-                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-                        Get a fully personalised nutrition plan built around your lifestyle.
-                        Choose data-driven tracking or simple principles. No restrictions unless
-                        you want them. High accountability with close check-ins to keep you on track.
-                    </p>
+                    <div class="prose prose-lg max-w-none text-gray-700 mb-8 space-y-4">
+                        <p>
+                            This is our most personal option.<br>
+                            We build everything around you — your schedule, your goals, your preferences.
+                        </p>
 
-                    <!-- Benefits List -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                        <!-- EDITABLE: Customize benefits -->
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-brand-red mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Fully personalised plan</span>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-brand-red mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Choose: data-driven or simple principles</span>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-brand-red mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">High accountability with close check-ins</span>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-brand-red mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Focus on basics: protein, veggies, steps, calories</span>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-brand-red mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Flexible approach that fits your life</span>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-brand-red mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Direct access to your coach</span>
-                        </div>
+                        <p>
+                            <strong>You choose the style:</strong>
+                        </p>
+                        <ul class="list-none pl-0 space-y-2">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-warm mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>More numbers and data if you love clarity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-warm mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Or simple principles if you already have enough on your mind</span>
+                            </li>
+                        </ul>
+
+                        <p>
+                            It is never restrictive unless you want it to be.
+                        </p>
+
+                        <p>
+                            <strong>We focus on the big rocks:</strong>
+                        </p>
+                        <ul class="list-none pl-0 space-y-2">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-warm mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Enough protein</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-warm mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Enough vegetables</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-warm mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Daily movement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-warm mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>A steady calorie target</span>
+                            </li>
+                        </ul>
+
+                        <p class="text-xl font-medium text-gray-900">
+                            Small changes. Big results.
+                        </p>
                     </div>
 
-                    <!-- Best For -->
-                    <div class="bg-white rounded-lg p-4 mb-8 border border-red-200">
+                    <div class="bg-white rounded-xl p-5 mb-8 border border-orange-200">
                         <p class="text-gray-700">
-                            <strong class="text-brand-red">Best for:</strong>
-                            People who want maximum support and clear results.
+                            <strong class="text-brand-warm">Best for:</strong> people who want personal support and clear results.
                         </p>
                     </div>
 
-                    <!-- CTA Button -->
+                    <!-- BOOKING LINK GOES HERE -->
                     <div class="text-center">
-                        <a href="#contact"
-                           class="inline-block px-10 py-4 bg-brand-red text-white rounded-lg hover:bg-red-500 transition-colors text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                            Start 1-on-1 Coaching
+                        <a href="#booking"
+                           class="inline-block w-full sm:w-auto px-10 py-4 bg-brand-warm text-white rounded-lg hover:bg-orange-600 transition-all text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                            Book Goal Review
                         </a>
                     </div>
                 </div>
@@ -249,84 +307,80 @@
         </section>
 
         <!-- ============================================ -->
-        <!-- PROGRAM 2: 28-DAY KICKSTART GROUP -->
+        <!-- 28-DAY KICKSTART -->
         <!-- ============================================ -->
-        <section id="kickstart" class="py-16 sm:py-20 bg-gray-50 scroll-mt-20">
+        <section id="kickstart" class="py-16 sm:py-24 bg-gray-50 scroll-mt-20">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 sm:p-12 shadow-xl border border-yellow-200">
-                    <!-- Title -->
+                <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-3xl p-8 sm:p-12 border border-teal-100 shadow-xl">
+
                     <div class="text-center mb-8">
                         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
-                            28-Day Kickstart Group
+                            28-Day Kickstart
                         </h2>
-                        <!-- EDITABLE: Update pricing here -->
-                        <p class="text-xl sm:text-2xl text-amber-600 font-semibold">
-                            €200 · 28 days
+                        <p class="text-2xl text-brand-teal font-semibold">
+                            €200 total · 28 days
                         </p>
                     </div>
 
-                    <!-- Description -->
-                    <!-- EDITABLE: Customize the program description -->
-                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-                        Join a group of people just like you for 28 days of clear structure and
-                        support. Budget-friendly, easy to follow, and packed with simple actions
-                        that build better habits. You can repeat it anytime.
-                    </p>
+                    <div class="prose prose-lg max-w-none text-gray-700 mb-8 space-y-4">
+                        <p>
+                            A friendly group program to help you reboot your habits in just four weeks.<br>
+                            Clear focus each week, simple tasks, and support from people doing the same challenge.
+                        </p>
 
-                    <!-- Benefits List -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                        <!-- EDITABLE: Customize benefits -->
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-amber-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Weekly focus with simple actions</span>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-amber-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Group check-ins and accountability</span>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-amber-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Clear guidance on what to eat</span>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-amber-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Budget-friendly option</span>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-amber-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Great first step if you are new</span>
-                        </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-amber-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span class="text-gray-700">Repeat the program anytime</span>
-                        </div>
+                        <p>
+                            <strong>Included:</strong>
+                        </p>
+                        <ul class="list-none pl-0 space-y-2">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-teal mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Daily check-ins</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-teal mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Weekly focus themes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-teal mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Simple, actionable steps</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-teal mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Group accountability</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-brand-teal mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Support from Coach Annie</span>
+                            </li>
+                        </ul>
+
+                        <p>
+                            You may repeat the Kickstart once.<br>
+                            After that we recommend moving into 1-on-1 coaching for deeper support.
+                        </p>
                     </div>
 
-                    <!-- Best For -->
-                    <div class="bg-white rounded-lg p-4 mb-8 border border-yellow-300">
+                    <div class="bg-white rounded-xl p-5 mb-8 border border-teal-200">
                         <p class="text-gray-700">
-                            <strong class="text-amber-600">Best for:</strong>
-                            People who like group energy and a clear 4-week boost.
+                            <strong class="text-brand-teal">Best for:</strong> people who like group energy and a simple, structured 4-week boost.
                         </p>
                     </div>
 
-                    <!-- CTA Button -->
+                    <!-- BOOKING LINK GOES HERE -->
                     <div class="text-center">
-                        <a href="#contact"
-                           class="inline-block px-10 py-4 bg-brand-yellow text-gray-900 rounded-lg hover:bg-yellow-400 transition-colors text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                            Join the 28-Day Kickstart
+                        <a href="#booking"
+                           class="inline-block w-full sm:w-auto px-10 py-4 bg-brand-teal text-white rounded-lg hover:bg-teal-600 transition-all text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                            Book Goal Review
                         </a>
                     </div>
                 </div>
@@ -334,379 +388,285 @@
         </section>
 
         <!-- ============================================ -->
-        <!-- COMPARISON SECTION -->
+        <!-- COMPARISON -->
         <!-- ============================================ -->
-        <section class="py-16 sm:py-20 bg-white">
+        <section class="py-16 sm:py-24 bg-white">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                        Which option fits you?
+                        Which option fits you best?
                     </h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Not sure which one fits you? Choose the 28-Day Kickstart to start,
-                        or 1-on-1 for maximum support.
-                    </p>
                 </div>
 
-                <!-- Comparison Table (Desktop) -->
-                <div class="hidden md:block overflow-x-auto">
-                    <table class="w-full border-collapse">
+                <!-- Desktop Comparison Table -->
+                <div class="hidden md:block overflow-x-auto mb-12">
+                    <table class="w-full">
                         <thead>
                             <tr class="border-b-2 border-gray-300">
-                                <th class="text-left py-4 px-4 text-gray-900 font-semibold"></th>
-                                <th class="text-center py-4 px-4 text-gray-900 font-semibold bg-red-50">
-                                    1-on-1 Coaching
+                                <th class="text-left py-4 px-4"></th>
+                                <th class="text-center py-4 px-6 bg-orange-50 rounded-t-xl">
+                                    <span class="text-xl font-bold text-gray-900">1-on-1 Coaching</span>
                                 </th>
-                                <th class="text-center py-4 px-4 text-gray-900 font-semibold bg-yellow-50">
-                                    28-Day Kickstart
+                                <th class="text-center py-4 px-6 bg-teal-50 rounded-t-xl">
+                                    <span class="text-xl font-bold text-gray-900">Kickstart</span>
                                 </th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <!-- EDITABLE: Update comparison rows -->
+                        <tbody class="text-base">
                             <tr class="border-b border-gray-200">
-                                <td class="py-4 px-4 font-medium text-gray-900">Coaching style</td>
-                                <td class="py-4 px-4 text-center bg-red-50">Fully personalised</td>
-                                <td class="py-4 px-4 text-center bg-yellow-50">Group-based with structure</td>
+                                <td class="py-4 px-4 font-medium text-gray-900">Structure</td>
+                                <td class="py-4 px-6 text-center bg-orange-50">Fully personalised</td>
+                                <td class="py-4 px-6 text-center bg-teal-50">Group-based</td>
                             </tr>
                             <tr class="border-b border-gray-200">
-                                <td class="py-4 px-4 font-medium text-gray-900">Support level</td>
-                                <td class="py-4 px-4 text-center bg-red-50">High accountability, close contact</td>
-                                <td class="py-4 px-4 text-center bg-yellow-50">Group support and check-ins</td>
+                                <td class="py-4 px-4 font-medium text-gray-900">Support</td>
+                                <td class="py-4 px-6 text-center bg-orange-50">Weekly 1-on-1 support</td>
+                                <td class="py-4 px-6 text-center bg-teal-50">Daily check-ins</td>
                             </tr>
                             <tr class="border-b border-gray-200">
-                                <td class="py-4 px-4 font-medium text-gray-900">Duration</td>
-                                <td class="py-4 px-4 text-center bg-red-50">Ongoing (minimum 2 months)</td>
-                                <td class="py-4 px-4 text-center bg-yellow-50">28 days (repeatable)</td>
+                                <td class="py-4 px-4 font-medium text-gray-900">Approach</td>
+                                <td class="py-4 px-6 text-center bg-orange-50">Flexible structure<br>Tailored to your life</td>
+                                <td class="py-4 px-6 text-center bg-teal-50">Fixed 4-week structure<br>Simple weekly actions</td>
                             </tr>
                             <tr class="border-b border-gray-200">
                                 <td class="py-4 px-4 font-medium text-gray-900">Price</td>
-                                <td class="py-4 px-4 text-center bg-red-50 font-semibold">€350 / month</td>
-                                <td class="py-4 px-4 text-center bg-yellow-50 font-semibold">€200 total</td>
+                                <td class="py-4 px-6 text-center bg-orange-50 font-bold text-brand-warm">€350 per month</td>
+                                <td class="py-4 px-6 text-center bg-teal-50 font-bold text-brand-teal">€200 total</td>
                             </tr>
                             <tr class="border-b border-gray-200">
-                                <td class="py-4 px-4 font-medium text-gray-900">Accountability</td>
-                                <td class="py-4 px-4 text-center bg-red-50">Direct coach access</td>
-                                <td class="py-4 px-4 text-center bg-yellow-50">Group accountability</td>
+                                <td class="py-4 px-4 font-medium text-gray-900">Duration</td>
+                                <td class="py-4 px-6 text-center bg-orange-50">Minimum 2 months</td>
+                                <td class="py-4 px-6 text-center bg-teal-50">Repeat once</td>
                             </tr>
                             <tr>
-                                <td class="py-4 px-4 font-medium text-gray-900">Best fit</td>
-                                <td class="py-4 px-4 text-center bg-red-50">Maximum support, long-term change</td>
-                                <td class="py-4 px-4 text-center bg-yellow-50">Quick boost, group energy</td>
+                                <td class="py-4 px-4 font-medium text-gray-900">Best for</td>
+                                <td class="py-4 px-6 text-center bg-orange-50 rounded-b-xl">Maximum support and clear results</td>
+                                <td class="py-4 px-6 text-center bg-teal-50 rounded-b-xl">People who love group motivation</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <!-- Comparison Cards (Mobile) -->
-                <div class="md:hidden space-y-6">
+                <!-- Mobile Comparison Cards -->
+                <div class="md:hidden space-y-6 mb-12">
                     <!-- 1-on-1 Card -->
-                    <div class="bg-red-50 rounded-lg p-6 border-2 border-brand-red">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">1-on-1 Coaching</h3>
-                        <div class="space-y-3">
-                            <div class="flex justify-between">
-                                <span class="font-medium text-gray-700">Style:</span>
-                                <span class="text-gray-900">Fully personalised</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="font-medium text-gray-700">Support:</span>
-                                <span class="text-gray-900">High, close contact</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="font-medium text-gray-700">Duration:</span>
-                                <span class="text-gray-900">Min. 2 months</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="font-medium text-gray-700">Price:</span>
-                                <span class="text-brand-red font-bold">€350 / month</span>
-                            </div>
-                            <div class="pt-2 border-t border-red-200">
-                                <span class="text-sm text-gray-700">Maximum support, long-term change</span>
+                    <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-6 border-2 border-brand-warm shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-5 text-center">1-on-1 Coaching</h3>
+                        <div class="space-y-3 text-gray-700">
+                            <div><strong>Structure:</strong> Fully personalised</div>
+                            <div><strong>Support:</strong> Weekly 1-on-1 support</div>
+                            <div><strong>Approach:</strong> Flexible structure, tailored to your life</div>
+                            <div><strong>Price:</strong> <span class="text-brand-warm font-bold">€350 per month</span></div>
+                            <div><strong>Duration:</strong> Minimum 2 months</div>
+                            <div class="pt-3 border-t border-orange-200">
+                                <strong>Best for:</strong> Maximum support and clear results
                             </div>
                         </div>
                     </div>
 
-                    <!-- 28-Day Kickstart Card -->
-                    <div class="bg-yellow-50 rounded-lg p-6 border-2 border-brand-yellow">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">28-Day Kickstart</h3>
-                        <div class="space-y-3">
-                            <div class="flex justify-between">
-                                <span class="font-medium text-gray-700">Style:</span>
-                                <span class="text-gray-900">Group structure</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="font-medium text-gray-700">Support:</span>
-                                <span class="text-gray-900">Group check-ins</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="font-medium text-gray-700">Duration:</span>
-                                <span class="text-gray-900">28 days</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="font-medium text-gray-700">Price:</span>
-                                <span class="text-amber-600 font-bold">€200 total</span>
-                            </div>
-                            <div class="pt-2 border-t border-yellow-200">
-                                <span class="text-sm text-gray-700">Quick boost, group energy</span>
+                    <!-- Kickstart Card -->
+                    <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-6 border-2 border-brand-teal shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-5 text-center">Kickstart</h3>
+                        <div class="space-y-3 text-gray-700">
+                            <div><strong>Structure:</strong> Group-based</div>
+                            <div><strong>Support:</strong> Daily check-ins</div>
+                            <div><strong>Approach:</strong> Fixed 4-week structure, simple weekly actions</div>
+                            <div><strong>Price:</strong> <span class="text-brand-teal font-bold">€200 total</span></div>
+                            <div><strong>Duration:</strong> Repeat once</div>
+                            <div class="pt-3 border-t border-teal-200">
+                                <strong>Best for:</strong> People who love group motivation
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- BOOKING LINK GOES HERE -->
+                <div class="text-center">
+                    <a href="#booking"
+                       class="inline-block w-full sm:w-auto px-10 py-4 bg-brand-warm text-white rounded-lg hover:bg-orange-600 transition-all text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        Book Goal Review
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- ============================================ -->
-        <!-- TESTIMONIALS / SOCIAL PROOF -->
+        <!-- TESTIMONIALS -->
         <!-- ============================================ -->
-        <section class="py-16 sm:py-20 bg-gray-50">
+        <section class="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                        What our members say
+                        What other members say
                     </h2>
-                    <p class="text-lg text-gray-600">
-                        Real people, real results
-                    </p>
                 </div>
 
-                <!-- Testimonials Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Testimonial 1 -->
-                    <!-- EDITABLE: Replace with real testimonials -->
-                    <div class="bg-white rounded-lg p-6 shadow-md">
-                        <div class="mb-4">
-                            <svg class="w-8 h-8 text-brand-teal" fill="currentColor" viewBox="0 0 24 24">
+                    <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100">
+                        <div class="mb-5">
+                            <svg class="w-10 h-10 text-brand-teal opacity-60" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                             </svg>
                         </div>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            I finally stopped overthinking food. The plan was simple and worked
-                            with my busy job. I feel so much better.
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            I finally stopped overthinking food. The plan was simple and worked with my busy job.
                         </p>
-                        <div class="border-t border-gray-200 pt-4">
-                            <p class="font-semibold text-gray-900">Sarah M.</p>
-                            <p class="text-sm text-gray-500">1-on-1 Coaching member</p>
-                        </div>
                     </div>
 
                     <!-- Testimonial 2 -->
-                    <div class="bg-white rounded-lg p-6 shadow-md">
-                        <div class="mb-4">
-                            <svg class="w-8 h-8 text-brand-teal" fill="currentColor" viewBox="0 0 24 24">
+                    <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100">
+                        <div class="mb-5">
+                            <svg class="w-10 h-10 text-brand-teal opacity-60" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                             </svg>
                         </div>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            The 28-day program gave me the kickstart I needed. The group kept me
-                            motivated and I learned habits I still use today.
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            I felt supported the whole way. Small steps, big change.
                         </p>
-                        <div class="border-t border-gray-200 pt-4">
-                            <p class="font-semibold text-gray-900">Tom V.</p>
-                            <p class="text-sm text-gray-500">28-Day Kickstart member</p>
-                        </div>
                     </div>
 
                     <!-- Testimonial 3 -->
-                    <div class="bg-white rounded-lg p-6 shadow-md">
-                        <div class="mb-4">
-                            <svg class="w-8 h-8 text-brand-teal" fill="currentColor" viewBox="0 0 24 24">
+                    <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100">
+                        <div class="mb-5">
+                            <svg class="w-10 h-10 text-brand-teal opacity-60" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                             </svg>
                         </div>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            No crazy rules. Just clear guidance that fits my life as a parent.
-                            My energy is way better now.
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            Annie helped me understand what works for me. No stress, just clarity.
                         </p>
-                        <div class="border-t border-gray-200 pt-4">
-                            <p class="font-semibold text-gray-900">Lisa K.</p>
-                            <p class="text-sm text-gray-500">1-on-1 Coaching member</p>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ============================================ -->
-        <!-- FAQ SECTION -->
+        <!-- FAQ -->
         <!-- ============================================ -->
-        <section class="py-16 sm:py-20 bg-white">
+        <section class="py-16 sm:py-24 bg-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                         Common questions
                     </h2>
-                    <p class="text-lg text-gray-600">
-                        Everything you need to know
-                    </p>
                 </div>
 
-                <!-- FAQ Items -->
-                <!-- EDITABLE: Add or modify FAQ questions and answers -->
-                <div class="space-y-6">
+                <div class="space-y-4">
                     <!-- FAQ 1 -->
-                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
-                            Do I need to track calories?
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            It depends on what works for you. Some people love data and find tracking helpful.
-                            Others prefer simple principles like "protein with every meal" and "fill half your
-                            plate with vegetables". We adapt to your preference.
+                    <details class="bg-gray-50 rounded-xl p-6 border border-gray-200 group">
+                        <summary class="text-lg font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                            <span>Do I need to track calories?</span>
+                            <svg class="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </summary>
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            Not unless you want to. We can use numbers if they help you, or simple principles if your life is already busy.
                         </p>
-                    </div>
+                    </details>
 
                     <!-- FAQ 2 -->
-                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
-                            Is this very restrictive?
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            No. We focus on what you should eat more of, not what you cannot have.
-                            The goal is to feel good and build sustainable habits, not to follow strict rules.
-                            We only add restrictions if you specifically want more structure.
+                    <details class="bg-gray-50 rounded-xl p-6 border border-gray-200 group">
+                        <summary class="text-lg font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                            <span>Is this restrictive?</span>
+                            <svg class="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </summary>
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            No. We avoid extreme rules. We focus on healthy habits you can keep up.
                         </p>
-                    </div>
+                    </details>
 
                     <!-- FAQ 3 -->
-                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
-                            Can I join if I am vegetarian or have allergies?
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Yes. Both programs work with all diets and preferences. We build your plan around
-                            what you eat and what you enjoy. Just let us know your needs during the starting call.
+                    <details class="bg-gray-50 rounded-xl p-6 border border-gray-200 group">
+                        <summary class="text-lg font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                            <span>Can I repeat the Kickstart?</span>
+                            <svg class="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </summary>
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            Yes, once. After that we recommend the 1-on-1 coaching program.
                         </p>
-                    </div>
+                    </details>
 
                     <!-- FAQ 4 -->
-                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
-                            Can I repeat the 28-Day Kickstart?
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Absolutely. Many members do the Kickstart a few times throughout the year to reset
-                            their habits or try a new focus area. It is a great way to stay on track.
+                    <details class="bg-gray-50 rounded-xl p-6 border border-gray-200 group">
+                        <summary class="text-lg font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                            <span>Do I need to be a CrossFit Leiden member?</span>
+                            <svg class="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </summary>
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            No. The Kickstart and the 1-on-1 coaching are open to everyone.
                         </p>
-                    </div>
+                    </details>
 
                     <!-- FAQ 5 -->
-                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
-                            Do I need to be a CrossFit Leiden member?
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            No. These nutrition programs are open to everyone in Leiden and beyond.
-                            You do not need to be a gym member to join.
+                    <details class="bg-gray-50 rounded-xl p-6 border border-gray-200 group">
+                        <summary class="text-lg font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                            <span>How do I start?</span>
+                            <svg class="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </summary>
+                        <p class="text-gray-600 mt-4 leading-relaxed">
+                            Book your Goal Review. We help you choose the best option.
                         </p>
-                    </div>
-
-                    <!-- FAQ 6 -->
-                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
-                            How do I get started?
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Click one of the buttons on this page to choose your program. Then email us at
-                            nutrition@crossfitleiden.nl and we will set up your starting call. Easy.
-                        </p>
-                    </div>
+                    </details>
                 </div>
             </div>
         </section>
 
         <!-- ============================================ -->
-        <!-- FINAL CTA SECTION -->
+        <!-- FINAL CTA -->
         <!-- ============================================ -->
-        <section class="py-16 sm:py-24 bg-gradient-to-br from-teal-50 to-cyan-50">
+        <section class="py-16 sm:py-24 bg-gradient-to-br from-teal-50 via-orange-50 to-teal-50">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <!-- Headline -->
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                    Ready to feel better in your own body?
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
+                    Ready to feel better in your body?
                 </h2>
 
-                <!-- Supporting Text -->
-                <p class="text-lg sm:text-xl text-gray-700 mb-10 max-w-2xl mx-auto">
-                    Choose the option that fits your life. Start today.
-                </p>
-
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact"
-                       class="px-10 py-4 bg-brand-red text-white rounded-lg hover:bg-red-500 transition-colors text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                        Start 1-on-1 Coaching
-                    </a>
-                    <a href="#contact"
-                       class="px-10 py-4 bg-brand-yellow text-gray-900 rounded-lg hover:bg-yellow-400 transition-colors text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                        Join the 28-Day Kickstart
-                    </a>
-                </div>
+                <!-- BOOKING LINK GOES HERE -->
+                <a href="#booking"
+                   class="inline-block w-full sm:w-auto px-12 py-5 bg-brand-warm text-white rounded-lg hover:bg-orange-600 transition-all text-xl font-semibold shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5">
+                    Book Goal Review
+                </a>
             </div>
         </section>
     </main>
 
     <!-- ============================================ -->
-    <!-- FOOTER / CONTACT -->
+    <!-- FOOTER -->
     <!-- ============================================ -->
-    <footer id="contact" class="bg-gray-900 text-white py-12 scroll-mt-20">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <!-- Logo/Name -->
-                <h3 class="text-2xl font-bold mb-2">CrossFit Leiden</h3>
-                <p class="text-gray-400 mb-6">Leiden, The Netherlands</p>
+    <footer id="booking" class="bg-gray-900 text-white py-12 sm:py-16 scroll-mt-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl sm:text-3xl font-bold mb-3">
+                CrossFit Leiden
+            </h3>
+            <p class="text-gray-400 mb-6">
+                Leiden, The Netherlands
+            </p>
+            <p class="text-lg text-gray-300 mb-10">
+                Warm community. Personal support. Real results.
+            </p>
 
-                <!-- Contact Info -->
-                <!-- EDITABLE: Update email address -->
-                <div class="mb-6">
-                    <a href="mailto:nutrition@crossfitleiden.nl"
-                       class="text-brand-teal hover:text-teal-400 text-lg font-medium transition-colors">
-                        nutrition@crossfitleiden.nl
-                    </a>
-                </div>
+            <!-- BOOKING LINK GOES HERE -->
+            <a href="#booking"
+               class="inline-block w-full sm:w-auto px-10 py-4 bg-brand-teal text-white rounded-lg hover:bg-teal-600 transition-colors text-lg font-semibold shadow-lg hover:shadow-xl mb-10">
+                Book Goal Review
+            </a>
 
-                <p class="text-gray-400 text-sm mb-8">
-                    Questions? Email us and we will help you choose.
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-500 text-sm">
+                    © 2025 CrossFit Leiden
                 </p>
-
-                <!-- Divider -->
-                <div class="border-t border-gray-800 pt-8">
-                    <p class="text-gray-500 text-sm">
-                        © 2025 CrossFit Leiden. Built for real people, real results.
-                    </p>
-                </div>
             </div>
         </div>
     </footer>
 
-    <!-- ============================================ -->
-    <!-- MINIMAL JAVASCRIPT (OPTIONAL) -->
-    <!-- ============================================ -->
-    <script>
-        // Smooth scroll for anchor links (already handled by CSS, but this ensures cross-browser support)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                }
-            });
-        });
-
-        // Optional: Track which CTA button was clicked (useful for analytics)
-        document.querySelectorAll('a[href="#contact"]').forEach(button => {
-            button.addEventListener('click', function() {
-                const programType = this.textContent.includes('1-on-1') ? '1-on-1 Coaching' : '28-Day Kickstart';
-                console.log('CTA clicked:', programType);
-                // Here you could send to Google Analytics, Facebook Pixel, etc.
-                // Example: gtag('event', 'cta_click', { program: programType });
-            });
-        });
-    </script>
 </body>
 </html>
